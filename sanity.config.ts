@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'timezone date picker',
 
-  projectId: 'your_project_id',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID,
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
